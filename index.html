@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="./index.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Staatliches&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="https://kit.fontawesome.com/11d06f2f9f.js" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0,minimum-scale=1.0,maximum=scale=1.0">
+</head>
+
+<body>
+    <nav id="nav-bar" class="navBar">
+        <div  data-aos="fade-down" id="main-nav" class="mainNav">
+            <div>
+                <a href="index.html"> <i class="fas fa-university"></i></a>
+            </div>
+            <div class="nav-item">
+                <a href="index.html">Home</a>
+            </div>
+            <div class="nav-item">
+                <a href="./contact/index.html">Contact</a>
+            </div>
+            <div class="nav-item">
+                <a href="./product/home.html">Hometown</a>
+            </div>
+            <div class="nav-item">
+                <a href="./hometown/home.html">Product</a>
+            </div>
+        </div>
+    </nav>
+
+    <img id="first-img" class="firstImg" src="./style/IMG_0347.jpg">
+    <div class="side-bar-area" data-aos="fade-down-right">
+        <div id="home-bg-icon-id" class="side-bar">
+            <i id="home-bg-icon-1" class="fad fa-igloo"></i>
+            <i id="home-bg-icon-2" class="fad fa-igloo"></i>
+            <i id="home-bg-icon-3" class="fad fa-igloo"></i>
+            <i id="home-bg-icon-4" class="fad fa-igloo"></i>
+        </div>
+    </div>
+
+    <div class="first-text-container" data-aos="zoom-out-down">
+        <p class="first-text">Computers are useless.</p>
+        <p class="first-text">They can only give your answers</p>
+        <p class="first-text">--Pablo Picasso</p>
+    </div>
+
+    <div class="home-bio" id="homeBio">
+        <div id="bioContainer" class="bio-container" data-aos="flip-right">
+            <h1>Jianqiang Hao</h1>
+            <p>haojian@pdx.edu</p>
+            <p>Out of a keen interest in database, data science and artificial intelligence, especially human-computer interaction...</p>
+        </div>
+
+        <div class="bio-picture" data-aos="fade-up-left">
+            <img class="bio-mypic" src="style/IMG_5159.jpeg">
+        </div>
+
+        <div class="bio-sentence" data-aos="flight-right">
+            <p id="sentence">(The right is me)</p>
+        </div>
+
+    </div>
+
+    <footer class="footer-container">
+        <div class="footer-text">2020 Jianqiang.</div>
+        <div class="footer-text">All rights reserved.</div>
+    </footer>
+
+    <script>
+        AOS.init({
+            offset: 200,   
+            duration: 600,   
+            easing: 'ease-in-sine',   
+            delay: 100, 
+        });
+
+    </script>
+    <script src="./main.js"></script>
+
+</body>
+
+</html>
