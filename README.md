@@ -1,4 +1,4 @@
-# JianqiangH.github.io
+# Hardy7.github.io
 my blog website
 
 # Technologies
