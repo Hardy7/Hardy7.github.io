@@ -1,0 +1,160 @@
+body {
+    margin: 0 0;
+    text-align: center;
+}
+
+.firstImg{
+    background-size: cover;
+    background-position: top;
+    height: 100vh;
+    width: 100vw;
+}
+
+.navBar{
+    font-family: 'Open Sans';
+    position: absolute;
+    top: 0;
+    width: 100vw;
+    height: 40vh;
+}
+
+.mainNav{
+    height: 7vh;
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 4vmin 5vmin;
+    font-family: 'Cinzel';
+}
+
+.fa-university {
+    color: blue;
+    font-size: 5.0vmin;
+    padding: 4vmin 5vmin;
+}
+
+a {
+    text-align: center;
+    margin-top: 3vmin;
+    padding: 0 0;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 3vmin;
+}
+
+.nav-item {
+    padding: 4vmin 5vmin;
+}
+
+.side-bar-area {
+    position: absolute;
+    top: 25vh;
+    right: 3vw;
+    margin-top: 10vh;
+}
+
+.side-bar {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.fa-circle {
+    width: 3.6vw;
+    margin: 2vmin 2vmin;
+    font-size: 3.6vmin;
+    color: greenyellow;
+}
+
+.first-text-container {
+    position: absolute;
+    top: 55vh;
+    left: 10vw;
+    text-align: left;
+}
+
+.first-text {
+    margin: 0 0 0.5rem 0;
+    font-family: 'fangsong';
+    font-size: 6vmin;
+    color: red;
+    font-style: oblique
+}
+
+.bio-container {
+    background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
+    font-family: 'Open Sans';
+    border-radius: 1rem;
+    padding: 0;
+    width: 39.5vw;
+    color: black;
+    font-size: 1.5rem;
+    text-align: center;
+    margin: 3.5vh 3.5vw 3.5vh 3.5vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.bio-picture {
+    text-align: cneter;
+    padding: 0;
+    width: 39.5vw;
+    margin: 3.5vh 3.5vw 3.5vh 3.5vw;
+}
+
+.bio-mypic {
+    font-family: 'Open Sans';
+    height: 100%;
+    width: 100%;
+    border-radius: 1rem;
+    float: left;
+}
+
+.bio-sentence{
+    font-family: 'Open Sans';
+    display: inline;
+    padding-top: 20vw;
+    
+}
+
+#sentence{
+    float: left;
+    margin-top: 20vw;
+    margin-left: 5vw;
+}
+
+.footer-container {
+    text-align: center;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100vw;
+    height: 10vh;
+}
+
+
+.images img{
+    width: 400px;
+    height: 200px;
+    position: absolute;
+    opacity: 1;
+    z-index: 1;
+    transition: all linear 500ms;
+    -o-transition: all linear 500ms;
+    -moz-transition: all linear 500ms;
+    -webkit-transition: all linear 500ms;
+    top: 0;
+    left: -400px;
+}
+
+
+.footer-text {
+    margin: 1vh 2vw 1vh 2vw;
+    color: white;
+    font-size: 2vmin;
+}
