@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="./home.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Staatliches&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="https://kit.fontawesome.com/11d06f2f9f.js" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0,minimum-scale=1.0,maximum=scale=1.0">
+</head>
+
+<body>
+    <style>
+        .title-h.active {
+            color: red;
+        }
+    </style>
+    <nav id="nav-bar" class="navBar">
+        <div  data-aos="fade-down" id="main-nav" class="mainNav">
+            <div>
+                <a href="../index.html"> <i class="fas fa-university"></i></a>
+            </div>
+            <div class="nav-item">
+                <a href="../index.html">Home</a>
+            </div>
+             <div class="nav-item">
+                <a href="../contact/index.html">Contact</a>
+            </div>
+            <div class="nav-item">
+                <a href="./home.html">Hometown</a>
+            </div>
+            <div class="nav-item">
+                <a href="../hometown/home.html">Product</a>
+            </div>
+        </div>
+
+        <div class="nav-title" data-aos="zoom-in">Datong</div>
+    </nav>
+
+    <div class="container">
+        <div class="hometown">
+            <div class="hometown-title">
+                <label class="title-h">Geography</label>
+            </div>
+
+            <div class="homedown-information">
+                <div class="home-infor">
+                    <p>Datong is a prefecture-level city in northern Shanxi Province in the People's Republic of China.
+                    It had a population of 3,318,057 during the 2010 census, of whom 1,629,035 lived in the built-up area made of the three urban districts of Chengqu, Kuangqu and Nanjiao.</p>
+                </div>
+
+                <div class="images">
+                    <img id="image1" src="IMG_0347.jpg" width="30%%" height="40%%" alt>
+                    <img id="image2" src="be9ab6622fcf25da9630231abc75d44c.jpg" width="30%%" height="40%%" alt>
+                    <img id="image3" src="image2.jpg" width="30%%" height="40%%" alt>
+                    <img id="image4" src="image3.jpg" width="30%%" height="40%%" alt>
+                    <img id="image5" src="image5.jpg" width="30%%" height="40%%" alt>
+                </div>
+
+                <div id="slider">
+                    <a href="#image1">1</a>
+                    <a href="#image2">2</a>
+                    <a href="#image3">3</a>
+                    <a href="#image4">4</a>
+                </div>
+            </div>
+        </div>
+
+         <div class="hometown">
+            <div class="hometown-title">
+                <label class="title-h">History</label>
+            </div>
+
+            <div class="homedown-information">
+                <div class="home-infor">
+                    <p>The area of present-day Datong was close to the Beidi ("Northern Barbarian") state of Dai, which was conquered by the Zhao clan of Jin in 457 BC. 
+                    It was a frontier land between the agricultural Chinese and Beidi and the nomads of the Eurasian steppe (known to the Chinese as the Hu or Donghu). 
+                    The area was well known for its trade in horses.</p>
+                    <p> Pingcheng became the capital of Northern Wei from AD 398–494. The Yungang Grottoes were constructed during the later part of this period (460–494). During the mid to late 520s, Pingcheng was the seat of Northern Wei's Dai Commandery.[3]
+                    The city was renamed Datong in 1048. It was the Xijing ("Western Capital") of the Jurchen Jin dynasty prior to being sacked by the Mongols. It was sacked again at the end of the Ming in 1649, but promptly rebuilt in 1652.</p>
+                </div>
+            </div>
+        </div>
+
+         <div class="hometown">
+            <div class="hometown-title">
+                <label class="title-h">Tourism</label>
+            </div>
+
+            <div class="homedown-information">
+                <div class="home-infor">
+                    <p>The Yungang Grottoes are a collection of shallow caves located 16 km (9.9 mi) west of Datong. There are over 50,000 carved images and statues of Buddhas and bodhisattvas within these grottoes, ranging from 4 centimeters to 7 meters tall. Most of these icons are around 1000 years old.
+                    Further afield is the Hanging Temple built into a cliff face near Mount Heng. Most of the historical sites in this region date to the Tang and Ming dynasties</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer-container">
+        <div class="footer-text">2020 Jianqiang.</div>
+        <div class="footer-text">All rights reserved.</div>
+    </footer>
+    <script src="./jquery.js"></script>
+    <script>
+        AOS.init({
+            offset: 200,   
+            duration: 600,   
+            easing: 'ease-in-sine',   
+            delay: 100, 
+        });
+
+        var board =$('.title-h');
+        function toggle(){
+            if (board.hasClass('active')){
+                board.removeClass('active');
+            }else{
+                board.addClass('active');
+            }
+        }
+        setInterval(toggle, 200);
+    </script>
+    <script src="./jquery.js"></script>
+</body>
+</html>
