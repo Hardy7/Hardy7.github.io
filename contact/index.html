@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.bootcss.com/normalize/7.0.0/normalize.css">
+    <link rel="stylesheet" href="./contact.css">
+</head>
+<body>
+<div class="wrap wrap-sm">
+    <div>
+        <a href="index.html"> <i class="fas fa-university"></i></a>
+    </div>
+    <div class="header">
+        <a href="../index.html">Contact Me</a>
+    </div>
+    <div class="form">
+        <form id="signup">
+            <div class="input-wrap">
+                <label>Full Name: </label>
+                <input data-rule='maxlength:25|minlength:4'
+                       type="text"
+                       name="name"
+                       class="input-control">
+                <div id="name-input-error" class="input-error">Name format error</div>
+            </div>
+            <div class="input-wrap">
+                <label>Discord account: (like: username#1111)</label>
+                <input data-rule='pattern:"^[a-z#0-9]+$"|maxlength:18|minlength:5'
+                       type="text"
+                       name="username"
+                       class="input-control">
+                <div id="username-input-error" class="input-error">acount name format is error</div>
+            </div>
+            <div class="input-wrap">
+                <label>Phone number:</label>
+                <input data-rule='maxlength:15|minlength:10'
+                        type="text"
+                        name="age"
+                        class="input-control">
+                <div id="age-input-error" class="input-error">phone format is error</div>
+            </div>
+
+            <div class="input-wrap">
+                <label>Introduce yourself (optional)</label>
+                <input data-rule='required:false|maxlength:1024'
+                       type="text"
+                       name="intro"
+                       class="input-control">
+                <div id="intro-input-error" class="input-error"></div>
+            </div>
+            <button id ="button" class="button-control" type="submit">submit</button>
+            <input id="button" class="button-control" type="reset"  onclick="reset1()" name="reset"  value="Reset">
+        </form>
+    </div>
+</div>
+<script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.js"></script>
+<script src="./validator.js"></script>
+<script src="./input.js"></script>
+<script src="./contact.js"></script>
+</body>
+</html>
