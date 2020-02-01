@@ -3,27 +3,18 @@ $(function () {
   
     window.Validator = function (val, rule) {
   
-      /*
-      {
-        max: 10,
-        min: 2
-      }
-      */
       this.is_valid = function (new_val) {
         var key;
         if (new_val !== undefined)
           val = new_val;
   
-        /*如果不是必填项且用户未填写任何内容则直接判定为合法*/
         if (!rule.required && !val)
           return true;
   
         for (key in rule) {
-          /*防止重复检查*/
           if (key === 'required')
             continue;
   
-          /*调用rule中相对应的方法*/
           var r = this['validate_' + key]();
           if (!r) return false;
         }
@@ -68,16 +59,10 @@ $(function () {
         return reg.test(val);
       }
   
-      /* 用于完成this.validate_max 或
-        this.validate_min的前置工作
-      * */
       function pre_max_min() {
         val = parseFloat(val);
       }
   
-      /* 用于完成this.validate_maxlength或
-        this.validate_minlength的前置工作
-      * */
       function pre_length() {
         val = val.toString();
       }
